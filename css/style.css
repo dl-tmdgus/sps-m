@@ -21,16 +21,16 @@ img {
 
 /*상단*/
 header {
-		height:7vh; position:absolute; width:100%; z-index:1; background:#1b1b1b;
+		height:10vh; position:absolute; width:100%; z-index:1; background:#1b1b1b;
 }
 
 header h1 {
 		text-align:center;
 }
 header img {
-		display:block; transform:translateY(-17px); width:35%; margin:auto; 
+		display:block; transform:translateY(-27px); width:45%; margin:auto; 
 }
-button {display:block; transform:scale(2.5) translate(16px,-32px); border:none; background:none; color:white;}
+button {display:block; transform:scale(2.5) translate(16px,-42px); border:none; background:none; color:white;}
 #x {display:none;}
 /*메뉴*/
 /*nav:hover nav {
@@ -43,7 +43,7 @@ nav ul {
 nav li {
 		flex:1; text-align:center; position:relative; 
 }
-.mob {width:510px; position:absolute; height:32vh; background:white; transform:translate(-5px,-55px); display:none; margin:auto;}
+.mob {width:510px; position:absolute; height:44vh; background:white; transform:translate(-5px,-80px); display:none; margin:auto; z-index:1;}
 	.mob a {display:flex; flex-direction:column; padding:12px 22px; font-weight:bold;	border:1px solid gray; }
 
 /*메인메뉴*/
