@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+* {
+		margin:0; padding:0; box-sizing:border-box;
+}
+html, body {
+		font:10pt/180% "맑은 고딕","돋움"; color:#333; 
+}
+a{
+		color:#333; text-decoration:none;
+}
+a:focus {outline:1px solid blue;}
+img {
+		display:block;  color:white; height:auto; max-width:100%;
+}
+
+
+#layout {
+		width:500px; margin:auto; background:white; position:relative;
+}
+
+/*상단*/
+header {
+		height:7vh; position:absolute; width:100%; z-index:1; background:#1b1b1b;
+}
+
+header h1 {
+		text-align:center;
+}
+header img {
+		display:block; transform:translateY(-17px); width:35%; margin:auto; 
+}
+button {display:block; transform:scale(2.5) translate(16px,-32px); border:none; background:none; color:white;}
+#x {display:none;}
+/*메뉴*/
+/*nav:hover nav {
+		display:block;
+}*/
+
+nav ul {
+		display:flex; list-style:none; 
+}
+nav li {
+		flex:1; text-align:center; position:relative; 
+}
+.mob {width:510px; position:absolute; height:32vh; background:white; transform:translate(-5px,-55px); display:none; margin:auto;}
+	.mob a {display:flex; flex-direction:column; padding:12px 22px; font-weight:bold;	border:1px solid gray; }
+
+/*메인메뉴*/
+nav li> a {
+		font-weight:bold; font-size:1.2rem; display:block; padding:10px; color:white;
+}
+nav li>a:hover {
+		background:#1b1b1b; color:white; 
+}
+#nav {transform:translateY(-100px);}
+
+/*서브메뉴*/
+nav nav {
+		 position:absolute; width:100%; display:none;  z-index:1; opacity:0.9; transform:translateY(-100px); font-weight:bold;
+}
+nav nav a {
+		display:block; color:white; padding:9px; transition:0.5s;
+}
+nav nav a:hover:not(.blank) {
+		background:#1b1b1b; font-weight:bold;  color:white;
+}
+
+/*슬라이드*/
+header+ section h2 {display:none;}
+#slide {position:relative;}
+#slide a:not(:first-child) {position:absolute; top:0;}
+
+/*메인(공지사항+갤러리+비즈니스)*/
+main {
+		display:flex; padding:20px;
+}
+main> * {}
+main>div {flex:1; margin-right:40px;}
+main>section {flex:2;}
+main> section h2 {transform:translateY(20px);  }
+
+.tlt {
+		 display:inline-block; color:#1b1b1b; font-size:1.5rem;  margin-bottom:15px; border:none; font-weight:bold; display:none;
+}
+
+/*공지사항
+#notice {margin-bottom:40px;}
+#notice ul {list-style:none; line-height:250%;}
+#notice li {border-bottom:1px solid #1b1b1b;}
+#notice span {float:right;}
+#notice a:hover {
+		color:black; text-decoration:underline; font-weight:bold;
+}
+#img img {max-width:100%;}
+/*갤러리
+#gallery {}
+#gallery a:hover {
+		color:black; text-decoration:underline; font-weight:bold;}
+#gallery span {float:right;}
+#gallery ul {list-style:none; line-height:250%;}
+#gallery li {border-bottom:1px solid #1b1b1b;}
+*/
+
+
+/*하단*/
+footer {display:flex; align-items:center; padding:5px; background-color:#1b1b1b; font-size:0.7rem;}
+footer p {flex:2; color:white;}
+footer a {color:white;}
+footer select {padding:3px;}
+footer a:hover {text-decoration:underline;}
+
+/*****모바일******/

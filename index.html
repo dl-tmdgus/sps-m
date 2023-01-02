@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>서울사진학원</title>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/seoul.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				
+					<a href="index.html"><img src="images/logo1.png" alt="로고"></a>
+					<button type="button">&#x2630;</button>
+					<button type="button" id="x">X</button>
+				
+				<nav class="mob">
+					<div>
+						<a href="#">학원안내</a>
+						<a href="#">수강과정안내</a>
+						<a href="#">사진교실</a>
+						<a href="#">상담실</a>
+						<a href="#">공지사항</a>
+						<a href="#">전시안내</a>
+					</div>
+				</nav>
+			</header>
+			<section>
+				<h2>슬라이드 이미지</h2>
+				<div id="slide">
+					<a href="#"><img src="images/landscpae3.jpg" alt="1"></a>
+					<a href="#"><img src="images/landscpae2.jpg" alt="2"></a>
+					<a href="#"><img src="images/landscpae1.jpg" alt="3"></a>
+				</div>
+			</section>
+			<main>
+				<section id="img">
+					<img src="images/reason.jpg" alt="이유">
+			<h2 class="tlt">국비안내</h2>
+					<img src="images/gukbi.jpg" alt="국비" id="gg">
+				</section>
+			</main>
+			<footer>
+				<p>
+					<a href="#">업체소개</a>
+					<a href="#">이용약관</a>
+					<a href="#">개인정보취급방침안내</a>
+					<a href="#">계열사안내</a><br>
+					서울 강남구 역삼동 831-32번지 
+					Tel : 02-122-3344
+					Fax : 02-222-3344
+					E-mail : <a href="seoul@hanmail.net">seoul@hanmail.net</a><br>
+					copyright ㉾ seoul photo school.com Allright reserved.
+				</p>
+				<select onchange="if(this.value) {window.open(this.value);}">
+					<option value="#">페이지를 선택하세요.</option>
+					<option value="http://naver.com">네이버</option>
+					<option value="http://apple.com">애플</option>
+					<option value="http://adobe.com">어도브</option>
+					<option value="http://google.com">구글</option>
+				</select>
+			</footer>
+		</div>
+	</body>
+</html>
