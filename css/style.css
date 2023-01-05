@@ -43,7 +43,7 @@ nav ul {
 nav li {
 		flex:1; text-align:center; position:relative; 
 }
-.mob {width:510px; position:absolute; height:50vh; background:white; transform:translate(-5px,-80px); display:none; margin:auto; z-index:1;}
+.mob {width:510px; position:absolute; height:47vh; background:white; transform:translate(-5px,-80px); display:none; margin:auto; z-index:1;}
 	.mob a {display:flex; flex-direction:column; padding:12px 22px; font-weight:bold;	border:1px solid gray; }
 
 /*메인메뉴*/
