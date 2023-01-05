@@ -21,7 +21,7 @@ img {
 
 /*상단*/
 header {
-		height:10vh; position:absolute; width:100%; z-index:1; background:#1b1b1b;
+		height:8vh; position:absolute; width:100%; z-index:1; background:#1b1b1b;
 }
 
 header h1 {
@@ -43,7 +43,7 @@ nav ul {
 nav li {
 		flex:1; text-align:center; position:relative; 
 }
-.mob {width:510px; position:absolute; height:44vh; background:white; transform:translate(-5px,-80px); display:none; margin:auto; z-index:1;}
+.mob {width:510px; position:absolute; height:33vh; background:white; transform:translate(-5px,-80px); display:none; margin:auto; z-index:1;}
 	.mob a {display:flex; flex-direction:column; padding:12px 22px; font-weight:bold;	border:1px solid gray; }
 
 /*메인메뉴*/
@@ -68,17 +68,19 @@ nav nav a:hover:not(.blank) {
 
 /*슬라이드*/
 header+ section h2 {display:none;}
-#slide {position:relative;}
+#slide {position:relative; transform:translateY(75px);}
 #slide a:not(:first-child) {position:absolute; top:0;}
+
 
 /*메인(공지사항+갤러리+비즈니스)*/
 main {
-		display:flex; padding:20px;
+		display:flex; padding:20px; transform:translateY(75px);
 }
 main> * {}
 main>div {flex:1; margin-right:40px;}
 main>section {flex:2;}
 main> section h2 {transform:translateY(20px);  }
+footer { transform:translateY(75px);}
 
 .tlt {
 		 display:inline-block; color:#1b1b1b; font-size:1.5rem;  margin-bottom:15px; border:none; font-weight:bold; display:none;
